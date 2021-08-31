@@ -7,6 +7,9 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     basic.showNumber(2)
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.showIcon(IconNames.Asleep)
+})
 basic.showString("Melanie")
 basic.forever(function () {
     basic.showIcon(IconNames.Heart)
